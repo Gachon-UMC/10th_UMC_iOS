@@ -14,6 +14,9 @@ struct SplashView: View {
                 .ignoresSafeArea()
             
             Image("megaboxLogo")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 249, height: 84)
         }
     }
 }

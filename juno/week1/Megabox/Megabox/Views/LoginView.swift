@@ -30,7 +30,7 @@ struct LoginView: View {
         }
         .frame(maxWidth: .infinity)
         .padding(.top, 20)
-        .padding(.horizontal, 16)
+        .padding(.horizontal, 17)
     }
     
     private var loginInputSection: some View {
@@ -51,7 +51,7 @@ struct LoginView: View {
                     .background(Color.gray02)
             }
         }
-        .padding(.horizontal, 16)
+        .padding(.horizontal, 17)
     }
     
     private var loginActionButton: some View {
@@ -66,8 +66,8 @@ struct LoginView: View {
                 .cornerRadius(10)
                 .foregroundStyle(Color.white)
         }
-        .padding(.horizontal, 16)
-        .padding(.top, 78.98)
+        .padding(.horizontal, 17)
+        .padding(.top, 74.98)
     }
     
     private var signUpLinkView: some View {
@@ -98,7 +98,7 @@ struct LoginView: View {
                 .resizable()
                 .frame(width: 40, height: 40)
         }
-        .padding(.horizontal, 80)
+        .padding(.horizontal, 71)
         .padding(.vertical, 35)
     }
     
@@ -107,8 +107,8 @@ struct LoginView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(maxWidth: .infinity)
-            .padding(.horizontal, 16)
-            .padding(.bottom, 130)
+            .padding(.horizontal, 17)
+            .padding(.bottom, 210)
     }
     
 }
