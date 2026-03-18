@@ -1,0 +1,26 @@
+# Xcode
+build/
+DerivedData/
+*.hmap
+*.ipa
+*.playground.xcworkspace
+
+# 개인 설정
+xcuserdata/
+*.xcuserdatad
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+# package.resolved는 포함 (버전 고정)
+
+# CocoaPods
+Pods/
+
+# macOS
+.DS_Store
+*.swp
+*.lock
+
+# 기타
+.env
