@@ -17,7 +17,7 @@ struct MegaboxApp: App {
                 if showSplash {
                     SplashView()
                 } else {
-                    UserInfoView()
+                    LoginView()
                 }
             }
             .preferredColorScheme(.light)

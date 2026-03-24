@@ -21,6 +21,7 @@ struct LoginView: View {
             socialLoginGroup
             promotionBannerView
         }
+        .padding(.horizontal, 17)
     }
         
     private var loginHeaderView: some View {
@@ -31,7 +32,6 @@ struct LoginView: View {
         }
         .frame(maxWidth: .infinity)
         .padding(.top, 20)
-        .padding(.horizontal, 17)
     }
     
     @State private var loginViewModel = LoginViewModel()
@@ -54,7 +54,6 @@ struct LoginView: View {
                     .background(Color.gray02)
             }
         }
-        .padding(.horizontal, 17)
     }
     
     private var loginActionButton: some View {
@@ -67,10 +66,9 @@ struct LoginView: View {
                 .frame(maxWidth: .infinity)
                 .frame(height: 54)
                 .background(Color(.purple03))
-                .cornerRadius(10)
+                .clipShape(RoundedRectangle(cornerRadius: 46))
                 .foregroundStyle(Color.white)
         }
-        .padding(.horizontal, 17)
         .padding(.top, 74.98)
     }
     
@@ -125,7 +123,6 @@ struct LoginView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(maxWidth: .infinity)
-            .padding(.horizontal, 17)
             .padding(.bottom, 210)
     }
     

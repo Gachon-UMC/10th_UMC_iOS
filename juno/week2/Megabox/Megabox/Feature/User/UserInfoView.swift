@@ -24,7 +24,7 @@ struct UserInfoView: View {
         }
     }
     
-    
+    //MARK: ProfileHeader
     private var ProfileHeader: some View{
         VStack{
             HStack{
@@ -37,7 +37,7 @@ struct UserInfoView: View {
                         .padding(.vertical, 4)
                         .background(Color(.customLightBlue))
                         .foregroundStyle(.white)
-                        .cornerRadius(6)
+                        .clipShape(RoundedRectangle(cornerRadius: 6))
                 }
                 Spacer()
                 
@@ -48,7 +48,7 @@ struct UserInfoView: View {
                         .padding(.horizontal, 6)
                         .background(Color(.gray07))
                         .foregroundStyle(.white)
-                        .cornerRadius(16)
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
                 }
             }
             
@@ -63,7 +63,7 @@ struct UserInfoView: View {
         }
     }
     
-    
+    //MARK: ClubMembershipBtn
     private var ClubMembershipBtn: some View{
         Button{
             
@@ -91,11 +91,12 @@ struct UserInfoView: View {
                     endPoint: .trailing
                 )
             )
-            .cornerRadius(8)
+            .clipShape(RoundedRectangle(cornerRadius: 8))
         }
         .padding(.top, 15)
     }
     
+    //MARK: StatusInfo
     private var StatusInfo: some View{
         HStack{
             VStack{
@@ -142,6 +143,7 @@ struct UserInfoView: View {
         .padding(.top, 33)
     }
     
+    //MARK: TicketingView
     private var TicketingView: some View{
         HStack{
             Button{
