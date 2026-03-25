@@ -12,16 +12,19 @@ struct LoginView: View {
     @AppStorage("saved_pwd") var savedPwd: String = ""
     
     var body: some View {
-        VStack{
-            loginHeaderView
-            Spacer()
-            loginInputSection
-            loginActionButton
-            signUpLinkView
-            socialLoginGroup
-            promotionBannerView
+        GeometryReader{_ in //키보드 올라왔을때 화면 올라오기 방지
+            VStack{
+                loginHeaderView
+                Spacer()
+                loginInputSection
+                loginActionButton
+                signUpLinkView
+                socialLoginGroup
+                promotionBannerView
+            }
+            .padding(.horizontal, 17)
         }
-        .padding(.horizontal, 17)
+        .ignoresSafeArea(.keyboard, edges: .all)
     }
         
     private var loginHeaderView: some View {
