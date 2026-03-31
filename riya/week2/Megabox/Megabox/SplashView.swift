@@ -7,6 +7,7 @@ struct SplashView: View {
 
             Color.white
                 .ignoresSafeArea()
+            
             Image("meboxLogo 1")
                 .resizable()
                 .frame(width: 249, height: 84)

@@ -7,6 +7,7 @@
 import SwiftUI
 
 extension Font {
+    // 1. 폰트 타입 정의 (한 번만!)
     enum Pretend {
         case extraBold, bold, semibold, medium, regular, light
         
@@ -22,10 +23,12 @@ extension Font {
         }
     }
     
+    // 2. 공용 생성 함수 (한 번만!)
     static func pretend(type: Pretend, size: CGFloat) -> Font {
-        return Font.custom(type.value, size: size)
+        return .custom(type.value, size: size)
     }
     
+    // 3. 폰트 스타일 리스트 (여기서부터 중복 없이 쭉!)
     static var extraBold24: Font { .pretend(type: .extraBold, size: 24) }
 
     static var bold18: Font { .pretend(type: .bold, size: 18) }
